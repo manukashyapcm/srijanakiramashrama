@@ -663,14 +663,15 @@ footer {
 
 .logo-link,
 .title-link {
-  text-decoration: none;
+  text-decoration: none !important;
   color: inherit;
 }
 
-.title-link h1 {
-  transition: color 0.3s ease;
+.title-link h1,
+.title-link p {
+  text-decoration: none !important;
 }
 
-.title-link:hover h1 {
-  color: var(--saffron);
+.title-link:hover {
+  text-decoration: none;
 }
