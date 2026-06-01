@@ -238,3 +238,91 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+/* ============================= */
+/* ANNOUNCEMENTS PAGE            */
+/* ============================= */
+.announcement-hero {
+	position: relative;
+	min-height: 55vh;
+	background: url("assets/background.jpg");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.overlay {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(rgba(49, 61, 120, 0.72), rgba(142, 47, 47, 0.72));
+}
+
+.announcement-content {
+	position: relative;
+	z-index: 2;
+	max-width: 900px;
+	padding: 40px;
+	color: #fffaf0;
+}
+
+.announcement-content h2 {
+	font-size: 3rem;
+	margin-bottom: 22px;
+	color: #f8dfbd;
+}
+
+.announcement-content p {
+	font-size: 1.15rem;
+	line-height: 1.9;
+}
+
+.announcement-page {
+	padding: 80px 8%;
+}
+
+.announcement-card {
+	background: rgba(255, 250, 240, 0.95);
+	border: 2px solid #d99a3d;
+	border-radius: 22px;
+	padding: 50px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.announcement-card h2 {
+	color: #8e2f2f;
+	font-size: 2.3rem;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+.objectives-list {
+	padding-left: 28px;
+}
+
+.objectives-list li {
+	margin-bottom: 26px;
+	line-height: 1.9;
+	font-size: 1.08rem;
+	color: #313d78;
+}
+
+.objectives-list li::marker {
+	color: #e87524;
+	font-weight: bold;
+}
+
+@media (max-width: 768px) {
+	.announcement-content h2 {
+		font-size: 2rem;
+	}
+
+	.announcement-card {
+		padding: 30px;
+	}
+
+	.objectives-list li {
+		font-size: 1rem;
+	}
+}
