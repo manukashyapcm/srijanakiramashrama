@@ -105,7 +105,7 @@ nav a:hover {
   inset: 0;
 
   background:
-    url("assets/hero-bg.jpg");
+    url("assets/hero-bg.png");
 
   background-size: cover;
   background-position: center;
@@ -506,7 +506,7 @@ footer {
   inset: 0;
 
   background:
-    url("assets/resources-bg.jpg");
+    url("assets/resources-bg.png");
 
   background-size: cover;
   background-position: center;
