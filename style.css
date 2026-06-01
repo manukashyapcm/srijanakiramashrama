@@ -82,13 +82,71 @@ nav a:hover {
 }
 
 .hero {
+  position: relative;
+
   min-height: 70vh;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   text-align: center;
+
   padding: 80px 8%;
-  border-bottom: 2px solid var(--gold);
+
+  overflow: hidden;
+}
+
+/* Background Image */
+.hero::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    url("assets/hero-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  opacity: 0.28;
+
+  z-index: 0;
+}
+
+/* Color Overlay */
+.hero::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      rgba(248, 223, 189, 0.88),
+      rgba(255, 250, 240, 0.92)
+    );
+
+  z-index: 1;
+}
+
+/* Ensure content appears above overlays */
+.hero-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 900px;
+
+  background: rgba(255, 250, 240, 0.72);
+
+  border: 2px solid var(--saffron);
+
+  border-radius: 22px;
+
+  padding: 45px;
+
+  box-shadow: 0 10px 30px var(--shadow);
 }
 
 .hero-content {
@@ -429,4 +487,53 @@ footer {
     max-width: 195px;
     max-height: 195px;
   }
+}
+/* ============================= */
+/* RESOURCES BACKGROUND IMAGE    */
+/* ============================= */
+
+#resources {
+  position: relative;
+
+  overflow: hidden;
+}
+
+/* Background Image */
+#resources::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    url("assets/resources-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  opacity: 0.18;
+
+  z-index: 0;
+}
+
+/* Color Overlay */
+#resources::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      rgba(248, 223, 189, 0.9),
+      rgba(255, 250, 240, 0.92)
+    );
+
+  z-index: 1;
+}
+
+/* Keep all content above overlays */
+#resources > * {
+  position: relative;
+  z-index: 2;
 }
