@@ -541,3 +541,119 @@ footer {
   position: relative;
   z-index: 2;
 }
+/* ============================= */
+/* MOBILE OPTIMIZATION           */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  body {
+    background-attachment: scroll;
+  }
+
+  .site-header {
+    position: relative;
+    padding: 16px 5%;
+  }
+
+  .logo-area {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo-area img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .logo-area h1 {
+    font-size: 1.25rem;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 0.92rem;
+    padding: 6px 8px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 55px 5%;
+  }
+
+  .hero::before {
+    background-position: center;
+    opacity: 0.42;
+  }
+
+  .hero-content {
+    padding: 26px 20px;
+    border-radius: 16px;
+  }
+
+  .hero h2 {
+    font-size: 1.55rem;
+    line-height: 1.35;
+  }
+
+  .hero p {
+    font-size: 0.98rem;
+  }
+
+  .section {
+    padding: 50px 5%;
+  }
+
+  .section h2 {
+    font-size: 1.6rem;
+  }
+
+  .cards,
+  .gallery,
+  .donation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card,
+  .announcement,
+  .donation-box,
+  .donation-card,
+  .announcement-card {
+    padding: 24px 18px;
+  }
+
+  .gallery img {
+    height: 190px;
+  }
+
+  .announcement-content {
+    padding: 28px 18px;
+  }
+
+  .announcement-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .objectives-list {
+    padding-left: 22px;
+  }
+
+  .objectives-list li {
+    font-size: 0.98rem;
+    line-height: 1.75;
+  }
+
+  footer {
+    padding: 24px 5%;
+  }
+
+  .social-icons a {
+    font-size: 1.6rem;
+    margin: 0 9px;
+  }
+}
