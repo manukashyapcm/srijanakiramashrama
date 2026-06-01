@@ -105,12 +105,16 @@ nav a:hover {
   inset: 0;
 
   background:
+    linear-gradient(
+      rgba(0,0,0,0.18),
+      rgba(0,0,0,0.18)
+    ),
     url("assets/hero-bg.png");
 
   background-size: cover;
   background-position: center;
 
-  opacity: 0.28;
+  opacity: 0.62;
 
   z-index: 0;
 }
