@@ -657,3 +657,20 @@ footer {
     margin: 0 9px;
   }
 }
+/* ============================= */
+/* CLICKABLE LOGO & TITLE        */
+/* ============================= */
+
+.logo-link,
+.title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title-link h1 {
+  transition: color 0.3s ease;
+}
+
+.title-link:hover h1 {
+  color: var(--saffron);
+}
